@@ -18,3 +18,16 @@
     height: 100px;
     width: 100px;
 }
+
+#contact-btn{
+    width: 35%;
+    max-width: 150px;
+    height: 40px;
+    border-radius: 60px;
+
+    background-color: black;
+    color: white;
+
+    padding: 3px;
+    position: relative;
+}
