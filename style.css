@@ -14,7 +14,7 @@ body{
 }
 
 .profile-card {
-    width: 420px;
+    width: 450px;
     /* For curving the edges */
     border-radius: 8%;
     background-color: #fff;
@@ -40,9 +40,9 @@ body{
     /* Positions the image in relative to the card */
     position: absolute;
     width: 20%;
-    height: 20%;
-    top: 100px;
-    left: 10px;
+    height: 18%;
+    top: 110px;
+    left: 20px;
     border-radius: 50%;
     border: black 3px solid;
 }
@@ -56,7 +56,35 @@ body{
     border-radius: 50%;
 }
 
-.profile-info{
+.content{
+    /* padding: top, right, bottom, left */
+    padding:15px 25px 35px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.profile span{
+    font-size: 60%;
+    color: grey;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats div{
     position: relative;
-    font-color: #ff0000;
+    padding-right: 35px;
 }
