@@ -111,24 +111,20 @@ body{
 }
 
 .stats div{
-    padding: 0 25px;
-}
-
-.stats div:first-child{
-    padding-left: 0;
-}
-
-.stats div:last-child{
-    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
 }
 
 .stats div:not(:last-child)::after{
     content:"";
     position:absolute;
     width:2px;
-    height:45px;
-    right:20px;
-    top:5px;
+    height:100%;
+    top:0;
+    right:0px;
     background:#ddd;
 }
 
@@ -155,7 +151,7 @@ body{
     padding: 20px 20px;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .contact-btn:hover{
