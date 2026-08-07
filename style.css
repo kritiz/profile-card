@@ -73,6 +73,11 @@ body{
     margin-bottom: 35px;
 }
 
+.profile span{
+    font-size: 12px;
+    color: grey;
+}
+
 .tools-section{
     display: flex;
     align-items: center;
@@ -95,10 +100,6 @@ body{
     margin-left: -10px;
 }
 
-.profile span{
-    font-size: 12px;
-    color: grey;
-}
 
 .bottom{
     display: flex;
