@@ -13,8 +13,7 @@ body{
 
 .profile-card {
     width: 425px;
-    /* height: 280px; */
-    height: auto;
+    height: 280px;
     top: 30px;
     left: 30px;
     /* For curving the edges */
@@ -23,25 +22,20 @@ body{
     /* Box shadow offset x, offset y, blur, spread , color */
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
     position: relative;
-    overflow: hidden;   /* Nothing goes outside the card*/
+    overflow: hidden;
 }
 
 #back-img {
-    /* Makes the image fill the container */
     width: 100%; 
     height: 155px;
-    /* Takes full width available */
     display: block;
-    border-radius: 20px 20px 0px 0px;
+    /* border-radius: 20px 20px 0px 0px; */
     /* To apply gradient at base */
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
     opacity: 0.8;
 }
 
 .top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0px 0px 6px;
 }
 
@@ -59,7 +53,6 @@ body{
 #profile-img, #bookmark{
     position: absolute;
     top: 90px;
-    /* border-radius: 50%; */
     border: none;
 }
 
@@ -148,7 +141,6 @@ footer span{
     display: flex;
     align-items: center;    
     gap: 4px;              
-    
 }
 
 .contact-btn{
