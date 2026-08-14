@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Profile Card - Tailwind</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div
+      class="relative w-107 h-72 overflow-hidden rounded-3xl bg-white shadow-lg"
+    >
+      <!-- Background -->
+      <div class="relative h-40">
+        <img
+          class="w-full h-full"
+          src="background.jpg"
+          alt="Background Image"
+        />
+
+        <!-- Gradient -->
+        <div
+          class="absolute left-0 right-0 top-0 h-41 bg-linear-to-b from-transparent from-70% to-white"
+        ></div>
+      </div>
+
+      <!-- Avatar -->
+      <img
+        class="absolute left-5 top-24 w-15 rounded-full"
+        src="avatar.svg"
+        alt="Profile"
+      />
+
+      <!-- Bookmark -->
+      <img
+        class="absolute right-5 top-24 w-7.5"
+        src="bookmark.svg"
+        alt="Bookmark"
+      />
+
+      <!-- Profile -->
+      <main class="flex items-center justify-between px-5">
+        <div>
+          <p class="font-bold text-[14px]">Kritiz Sapkota</p>
+
+          <span class="text-gray-500 text-[11px]"> Web & UI/UX Designer </span>
+        </div>
+
+        <!-- Tools -->
+        <div class="flex items-center gap-3 pr-4">
+          <img class="w-5" src="canva.svg" alt="Canva" />
+
+          <img class="w-5 -ml-4" src="figma.svg" alt="Figma" />
+
+          <span class="text-gray-500 text-[10px]"> Tools </span>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="flex items-center justify-between px-5 mt-5">
+        <!-- Statistics -->
+        <div class="flex items-center gap-5">
+          <!-- Rating -->
+          <div class="flex flex-col items-center">
+            <p class="flex items-center gap-1 text-sm">
+              <img class="w-3" src="star.svg" alt="" />
+              4.0
+            </p>
+
+            <span class="text-gray-500 text-[10px]"> rating </span>
+          </div>
+
+          <!-- Divider -->
+          <span class="w-px h-10 bg-gray-300"></span>
+
+          <!-- Duration -->
+          <div class="flex flex-col items-center">
+            <p class="text-sm">8hrs</p>
+
+            <span class="text-gray-500 text-[10px]"> duration </span>
+          </div>
+
+          <!-- Divider -->
+          <span class="w-px h-10 bg-gray-300"></span>
+
+          <!-- Rate -->
+          <div class="flex flex-col items-center">
+            <p class="text-sm">$10/hr</p>
+            <span class="text-gray-500 text-[10px]">rate</span>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <button
+          class="h-10 w-34 rounded-3xl bg-black text-[12px] text-white hover:bg-gray-800 transition duration-500"
+        >
+          Get in touch
+        </button>
+      </footer>
+    </div>
+  </body>
+</html>
