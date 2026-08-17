@@ -9,9 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body class="min-h-screen bg-gray-100 flex items-center justify-center">
+  <body class="min-h-screen bg-gray-50 flex items-center justify-center">
     <div
-      class="relative w-107 h-72 overflow-hidden rounded-3xl bg-white shadow-lg"
+      class="relative w-107 h-72 overflow-hidden rounded-3xl bg-gray-50 border border-gray-200 shadow-lg"
     >
       <!-- Background -->
       <div class="relative h-40">
@@ -23,7 +23,7 @@
 
         <!-- Gradient -->
         <div
-          class="absolute left-0 right-0 top-0 h-41 bg-linear-to-b from-transparent from-70% to-white"
+          class="absolute left-0 right-0 top-0 h-41 bg-linear-to-b from-transparent from-70% to-gray-50"
         ></div>
       </div>
 
@@ -44,13 +44,20 @@
       <!-- Profile -->
       <main class="flex items-center justify-between px-5">
         <div>
-          <p class="font-bold text-[14px]">Kritiz Sapkota</p>
-
-          <span class="text-gray-500 text-[11px]"> Web & UI/UX Designer </span>
+          <ul class="list-type-none flex flex-col">
+            <li>
+              <p class="font-bold text-[14px]">Kritiz Sapkota</p>
+            </li>
+            <li>
+              <span class="flex text-gray-500/80 text-[10px] pt-1">
+                Web & UI/UX Designer
+              </span>
+            </li>
+          </ul>
         </div>
 
         <!-- Tools -->
-        <div class="flex items-center gap-3 pr-4">
+        <div class="flex items-center gap-2 pr-4">
           <img class="w-5" src="canva.svg" alt="Canva" />
 
           <img class="w-5 -ml-4" src="figma.svg" alt="Figma" />
@@ -62,15 +69,15 @@
       <!-- Footer -->
       <footer class="flex items-center justify-between px-5 mt-5">
         <!-- Statistics -->
-        <div class="flex items-center gap-5">
+        <div class="flex items-center gap-5 ml-2">
           <!-- Rating -->
           <div class="flex flex-col items-center">
-            <p class="flex items-center gap-1 text-sm">
+            <p class="flex items-center gap-1 font-bold text-[12px]">
               <img class="w-3" src="star.svg" alt="" />
               4.0
             </p>
 
-            <span class="text-gray-500 text-[10px]"> rating </span>
+            <span class="text-gray-500/80 text-[8px]"> rating </span>
           </div>
 
           <!-- Divider -->
@@ -78,9 +85,9 @@
 
           <!-- Duration -->
           <div class="flex flex-col items-center">
-            <p class="text-sm">8hrs</p>
+            <p class="font-bold text-[12px]">8hrs</p>
 
-            <span class="text-gray-500 text-[10px]"> duration </span>
+            <span class="text-gray-500/80 text-[8px]"> duration </span>
           </div>
 
           <!-- Divider -->
@@ -88,8 +95,8 @@
 
           <!-- Rate -->
           <div class="flex flex-col items-center">
-            <p class="text-sm">$10/hr</p>
-            <span class="text-gray-500 text-[10px]">rate</span>
+            <p class="font-bold text-[12px]">$10/hr</p>
+            <span class="text-gray-500/80 text-[8px]">rate</span>
           </div>
         </div>
 
