@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Profile Card - Tailwind</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+      }
+    </style>
   </head>
 
-  <body class="min-h-screen bg-gray-50 flex items-center justify-center">
+  <body
+    class="min-h-screen bg-gray-50 flex items-center justify-center font-sans"
+  >
     <div
-      class="relative w-107 h-72 overflow-hidden rounded-3xl bg-gray-50 border border-gray-200 shadow-lg"
+      class="relative w-full max-w-[428px] h-[288px] overflow-hidden rounded-3xl bg-gray-50 border border-gray-200 shadow-lg transition-all duration-500 ease-in-out hover:-translate-y-1 hover:shadow-xl"
     >
       <!-- Background -->
       <div class="relative h-40">
         <img
-          class="w-full h-full"
+          class="w-full h-full object-cover"
           src="background.jpg"
           alt="Background Image"
         />
 
         <!-- Gradient -->
         <div
-          class="absolute left-0 right-0 top-0 h-41 bg-linear-to-b from-transparent from-70% to-gray-50"
+          class="absolute left-0 right-0 top-0 h-full bg-linear-to-b from-transparent from-70% to-gray-50"
         ></div>
       </div>
 
@@ -36,7 +48,7 @@
 
       <!-- Bookmark -->
       <img
-        class="absolute right-5 top-24 w-7.5"
+        class="absolute right-5 top-24 w-[30px] h-[30px]"
         src="bookmark.svg"
         alt="Bookmark"
       />
@@ -44,7 +56,7 @@
       <!-- Profile -->
       <main class="flex items-center justify-between px-5">
         <div>
-          <ul class="list-type-none flex flex-col">
+          <ul class="list-none flex flex-col">
             <li>
               <p class="font-bold text-[14px]">Kritiz Sapkota</p>
             </li>
@@ -102,7 +114,7 @@
 
         <!-- Button -->
         <button
-          class="h-10 w-34 rounded-3xl bg-black text-[12px] text-white hover:bg-gray-800 transition duration-500"
+          class="h-10 w-[136px] rounded-3xl bg-black text-[12px] text-white hover:bg-gray-800 transition duration-500"
         >
           Get in touch
         </button>
